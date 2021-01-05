@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Game</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+    <div id="splash" class="animate__animated animate__fadeIn">
+        <h1 id="game-title">Who has more Spotify Followers?</h1>
+        <button id="start-btn" onclick="startGame();">Begin</button>
+    </div>
+
+    <div id="game-over" class="animate__animated animate__fadeIn">
+        <h1 id="game-title">Game Over</h1>
+        <h1 id="game-score-final">Your Score: 0</h1>
+        <h1 id="game-best-final">Your Best: 0</h1>
+    </div>
+
+    <div id="game">
+
+        <div id="game-view">
+    
+            <div id="artist1">
+                <h1 id='a1_name'></h1>
+                <button onclick="chooseArtist1()" id="artist-button">
+                    <div id="circle">
+                        <img src="", id='a1_img'>
+                    </div>
+                </button>
+            </div>
+            
+            <h2>or</h2>
+    
+            <div id="artist2">
+                <h1 id='a2_name'></h1>
+                <button onclick="chooseArtist2()" id="artist-button">
+                    <div id="circle">
+                        <img src="", id='a2_img'>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="game-stat" class="animate__animated animate__slideInLeft">
+            <h3 id="game-score">Score: 0</h3>
+            <h3 id="game-best">Best: 0</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>
