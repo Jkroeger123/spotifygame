@@ -1,5 +1,6 @@
 # Spotify Guessing Game
  Web based game in which users guess which artists has more Spotify followers.
+ 
  NOTE: simply cloning and running the server will not work as you need to create your own Spotify developer account.
  Once you recieve your credentials, insert the username and client secret in the .env file provided.
 
