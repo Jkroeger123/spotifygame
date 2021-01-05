@@ -1,5 +1,6 @@
 const express = require('express');
 const request = require('request');
+const dotenv = require('dotenv').config();
 const app = express();
 const PORT = 5000 || process.env.PORT;
 var accessToken_SP;
@@ -8,6 +9,7 @@ setAccessTokens();
 
 app.use(express.static('./static'));
 app.use(express.json());
+
 
 //currently gets a random artist name
 app.get('/artist', (req, res) => {
@@ -41,8 +43,8 @@ function setAccessTokens(){
         url: 'https://accounts.spotify.com/api/token',
         method: 'POST',
         auth: {
-          user: '1101ba1b83944f75ba14da94369fa027',
-          pass: '2dd81380e3a445b88b56c860e46bba08'
+          user: process.env.API_USER,
+          pass: process.env.API_PASS
         },
         form: {
           'grant_type': 'client_credentials'
