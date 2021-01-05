@@ -3,6 +3,8 @@
  
  NOTE: simply cloning and running the server will not work as you need to create your own Spotify developer account.
  Once you recieve your credentials, create a .env file in your project root and place API_USER=your api username and API_PASS=your client secret in the file
+ 
+ You can try out the game for yourself at https://spotifyfollowergame.herokuapp.com/
 
 ## Technologies Used 
  Uses node.js and express on the back end to initialize a server. This backend connects to Spotify's
