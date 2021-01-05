@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request');
 const dotenv = require('dotenv').config();
 const app = express();
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 var accessToken_SP;
 
 setAccessTokens();
