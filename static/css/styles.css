@@ -32,9 +32,9 @@ body.red{
 
 #game-view{
     display: flex;
-    width: 65%;
+    width: 70%;
     align-items: center; 
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: absolute;
     top: 20%;
 }
@@ -64,7 +64,6 @@ img {
   }
 
   #circle {
-    border-radius:50% 50% 50% 50%;
     width:450px;
     height:450px;
 }
@@ -145,3 +144,45 @@ h2{
     bottom: 0px;
     left: 0px;
 }
+
+@media (max-width: 1200px) {
+    #circle {
+        width:300px;
+        height:300px;
+    }
+  }
+
+  @media (max-width: 675px) {
+
+    h2{
+        display: none;
+    }
+
+    img {
+        border-radius: 0%;
+      }
+
+    #game-view{
+        flex-direction:column;
+        display: flex;
+        flex-wrap:wrap;
+        width: 70%;
+        align-items: center; 
+        position: absolute;
+        top: 20%;
+    }
+
+    #circle {
+        width:250px;
+        height:250px;
+    }
+
+    #splash{
+        font-size: 25px;
+        top: 20%;
+    }
+    #splash.menu{
+        font-size: 25px;
+        top: 20%;
+    }
+  }
